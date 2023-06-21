@@ -5,5 +5,4 @@ fn main() {
     print!("> ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut input).expect("Error");
-    println!("{}",input.trim());
 }
