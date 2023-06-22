@@ -222,7 +222,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rusti"
+name = "rustin"
 version = "0.1.0"
 dependencies = [
  "rustyline",
