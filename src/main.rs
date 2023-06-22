@@ -14,7 +14,7 @@ fn main() {
                 } else if line.chars().last().unwrap() == '}' {
                     prompt = "> ";
                 }
-            }
+            },
             Err(_) => (),
         };
     }
