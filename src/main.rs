@@ -1,8 +1,14 @@
-use std::io::{self, Write};
+use rustyline;
 
 fn main() {
-    let mut input = String::new();
-    print!("> ");
-    io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut input).expect("Error");
+    let mut rl = rustyline::DefaultEditor::new().expect("Error");
+    loop {
+        let readline = rl.readline("> ");
+        match readline {
+            Ok(line) => {
+                if line == "exit" { break }
+            },
+            Err(_) => (),
+        };
+    }
 }
