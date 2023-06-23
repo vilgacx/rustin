@@ -13,6 +13,8 @@ fn main() {
                     prompt = "... ";
                 } else if line.chars().last().unwrap() == '}' {
                     prompt = "> ";
+                } else {
+                    //command write
                 }
             },
             Err(_) => (),
