@@ -1,4 +1,5 @@
 use rustyline;
+use std::fs::File;
 
 fn main() {
     let mut rl = rustyline::DefaultEditor::new().expect("Error");
@@ -15,6 +16,7 @@ fn main() {
                     prompt = "> ";
                 } else {
                     //command write
+
                 }
             },
             Err(_) => (),
